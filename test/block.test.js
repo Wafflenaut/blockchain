@@ -10,10 +10,10 @@ describe('Block', () => {
 	});
 	
 	it('sets the `data` to match the input', ()=>{
-		expect(block.data).toEqual(data);
+		expect(block.data).toBe(data);
 	});
 	
 	it('sets the `lastHash` to match the hash of the last block', ()=>{
-		expect(block.lastHash).toEqual(lastBlock.hash);
+		expect(block.lastHash).toBe(lastBlock.hash);
 	});
 });
